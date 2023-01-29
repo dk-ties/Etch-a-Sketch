@@ -1,0 +1,22 @@
+.main {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: center;
+}
+
+.header,
+.footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.content {
+  min-height: 100%;
+  border: 1px solid limegreen;
+}
+.menuBar {
+  margin: 5px;
+}
