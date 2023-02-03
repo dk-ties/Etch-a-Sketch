@@ -4,6 +4,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   align-items: center;
+  justify-content: center;
 }
 
 .header,
@@ -14,9 +15,25 @@
 }
 
 .content {
-  min-height: 100%;
+  /* min-height: 80%;
+  width: 80%; */
+  height: 350px;
+  width: 350px;
+  justify-content: center;
   border: 1px solid limegreen;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 }
 .menuBar {
   margin: 5px;
+}
+.gameGrid {
+/*   width: 80px;
+  height: 80px; */
+  border: 1px solid limegreen;
+  /* flex: 1 1 auto;/* 
 }
