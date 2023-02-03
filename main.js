@@ -8,8 +8,14 @@ document.body.onload = newBase;
 
 //const planetVerdant = ["Verdant", "DW", 300, 150, 3000, "01-01", "02-02"];
 
+gameSize = document.getElementById("language");
+console.log(typeof gameSize.value);
+gameSize = Number(gameSize.value);
+console.log(typeof gameSize);
+
 const currentDiv = document.getElementById("content");
-let elementsCount = 16 * 16;
+let elementsCount = gameSize * gameSize;
+console.log(gameSize);
 function newBase() {
   for (let i = 0; i < elementsCount; i++) {
     const element = document.createElement("div");
