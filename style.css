@@ -28,9 +28,9 @@
 /* .gameGrid {
   border: 0.01px solid lightgray;
 } */
-.gameGrid:hover {
+/* .gameGrid:hover {
   background-color: black;
-}
+} */
 
 /* Set the grid size depend on the chosen game */
 

@@ -21,6 +21,7 @@ function newGame() {
     currentDiv.setAttribute("id", "gameSize" + elementsCount);
     currentDiv.appendChild(element);
   }
+  setEventlistener();
 }
 
 //on click newGame set a new game usin the newGame function
@@ -43,4 +44,16 @@ function deleteChild() {
     first.remove();
     first = currentDiv.firstElementChild;
   }
+}
+
+//mouse hover effect
+
+function setEventlistener() {
+  Array.from(document.getElementsByClassName("gameGrid")).forEach(function (
+    element
+  ) {
+    element.addEventListener("mouseover", function () {
+      this.setAttribute("style", "background-color: black;");
+    });
+  });
 }
